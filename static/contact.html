@@ -52,6 +52,17 @@ text-align: right;
 
 
 }
+.button {
+    background-color:blue;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 3px 2px;
+    
+}
 </style>
 </head>
 
@@ -208,13 +219,13 @@ text-align: right;
 	&emsp;Message : &nbsp;&emsp;&emsp;<input type="text" name="textbox1" width="25" height="20" placeholder="Your message" /><br><br>
 	&emsp;8 + 5 = : &nbsp;&emsp;&emsp;&emsp;<input type="text" name="textbox1" width="25" height="20" /><br><br>
 
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-  	Send
-    </button>&emsp;&emsp;
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-  	Reset
-    </button><br><br>
+    
+    
+	<form>	
+<button class="button" type="send">Send</button>
 
+<button class="button" type="rest">Reset</button>
+	</form>
 </div>
 
 
