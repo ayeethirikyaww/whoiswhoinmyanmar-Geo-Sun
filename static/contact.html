@@ -212,7 +212,7 @@ text-align: right;
 </textarea>
 <br><br>
 <div class="collection">
-	<form action="send.html">
+	<form>
 	&emsp;Name : &emsp;&emsp;&emsp;&emsp;<input type="text" name="textbox1" width="25" height="20" placeholder="Enter your name" /><br><br>
 	&emsp;Email address : <input type="text" name="textbox1" width="25" height="20" placeholder="Enter your email" /><br><br>
 	&emsp;Subject : &emsp;&emsp;&emsp;<input type="text" name="textbox1" width="25" height="20" placeholder="Your subject"/><br><br>
@@ -222,14 +222,19 @@ text-align: right;
     
     
 		
-<button class="button" type="send">Send</button>
+<button class="button" type="send" onclick="myFunction()">Send</button>
 
 <button class="button" type="reset">Reset</button>
 	</form>
 </div>
 
 
-
+<script>
+		function myFunction()
+{
+	alert("Thanks for contacting us.\nWe have received your message.\nWe will reply you as soon as possible.\nPlease wait for us and check your email.");
+}
+	</script>
 
 	</div>
     </main>
