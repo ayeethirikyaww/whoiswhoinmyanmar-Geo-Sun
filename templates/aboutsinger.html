@@ -7,33 +7,28 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <meta name="msapplication-tap-highlight" content="no">
-    <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Web Starter Kit">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
 
     <meta name="theme-color" content="#2F3BA2">
-    <link href="../static/img/Flag.PNG" rel="icon" />
+    <link href="{{url_for('static', filename='img/Flag.PNG')}}" rel="icon" />
 
     <title>Who is who in Myanmar</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="../static/css/mdb.css" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/mdb.css')}}" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
 
-    <link rel="stylesheet" href="../static/css/material.css">
-    <script src="../static/js/material.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/material.css')}}">
+    <script src="{{url_for('static', filename='js/material.js')}}"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -278,8 +273,8 @@ text-align: left;
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">Features</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="about.html">About</a></li>
-        <li><a href="partner.html">Partners</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="partner">Partners</a></li>
         
       </ul>
     </div>
@@ -288,8 +283,8 @@ text-align: left;
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">Methodology</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="method.html">How it works</a></li>
-        <li><a href="use.html">Usage</a></li>
+        <li><a href="method">How it works</a></li>
+        <li><a href="use">Usage</a></li>
       </ul>
     </div>
 
@@ -297,8 +292,8 @@ text-align: left;
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer__heading">FAQ</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="qa.html">Questions & Answers</a></li>
-        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="qa">Questions & Answers</a></li>
+        <li><a href="contact">Contact us</a></li>
       </ul>
     </div>
 
