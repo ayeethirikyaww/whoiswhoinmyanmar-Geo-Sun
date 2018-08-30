@@ -7,28 +7,33 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <meta name="msapplication-tap-highlight" content="no">
+    <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
 
     <meta name="theme-color" content="#2F3BA2">
-    <link href="{{url_for('static', filename='img/Flag.PNG')}}" rel="icon" />
+    <link href="{{ url_for('static', filename='img/Flag.PNG') }}" rel="icon" />
 
     <title>Who is who in Myanmar</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="{{url_for('static', filename='css/mdb.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/mdb.css') }}" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{url_for('static', filename='css/material.css')}}">
-    <script src="{{url_for('static', filename='js/material.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/material.css') }}">
+    <script src="{{ url_for('static', filename='js/material.js') }}"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -103,17 +108,17 @@ td, th {
                     <!-- Right -->
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
-                            <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+                            <a href="https://www.facebook.com/ah.thawm" class="nav-link waves-effect" target="_blank">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+                            <a href="https://twitter.com/SThawm" class="nav-link waves-effect" target="_blank">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://github.com/ayeethirikyaww/" class="nav-link border border-light rounded waves-effect"
+                            <a href="https://github.com/SanThorl/" class="nav-link border border-light rounded waves-effect"
                                 target="_blank">
                                 <i class="fa fa-github mr-2"></i>GitHub
                             </a>
@@ -130,7 +135,7 @@ td, th {
         <div class="sidebar-fixed position-fixed">
 
             <a class="logo-wrapper waves-effect">
-                <img src="../static/Flag.PNG" class="img-fluid" alt="">
+		    <img src="{{ url_for('static', filename='img/Flag.PNG') }}" class="img-fluid" alt="">
             </a>
 
             <div class="list-group list-group-flush">
